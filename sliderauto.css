@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.sliderDisplay {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 1500px;
+    height: 700px;
+}
+.sliderInput {
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+.sliderInput input {
+    display: none;
+}
+.foto {
+    width: 20%;
+    transition: 2s;
+}
+.foto img {
+    width: 1500px;
+    height: 600px;
+}
+.navigationBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    margin-top: -40px;
+}
+.manual-btn {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(187, 184, 184);
+    border-radius: 10px;
+    z-index: 10;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #101010;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
