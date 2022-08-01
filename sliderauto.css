@@ -8,8 +8,8 @@ body {
 .sliderDisplay {
     border-radius: 5px;
     overflow: hidden;
-    width: 1500px;
-    height: 700px;
+    max-width: 100%;
+    height: 100%;
 }
 .sliderInput {
     width: 500%;
@@ -24,14 +24,14 @@ body {
     transition: 2s;
 }
 .foto img {
-    width: 1500px;
-    height: 600px;
+    max-width: 100%;
+    height: 100%;
 }
 .navigationBtn {
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 1500px;
+    width: 100%;
     margin-top: -40px;
 }
 .manual-btn {
@@ -62,4 +62,19 @@ body {
 #radio5:checked ~ .first {
     margin-left: -80%;
 }
-
+@media all and (max-width: 800px) {
+    .foto img {
+        height: 70%;
+    }
+    .navigationBtn {
+        margin-top: -220px;
+    }
+}
+@media all and (max-width: 500px) {
+    .foto img {
+        height: 50%;
+    }
+    .navigationBtn {
+        margin-top: -340px;
+    }
+}
