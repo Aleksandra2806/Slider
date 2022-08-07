@@ -1,0 +1,35 @@
+#sliderContainer {
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide {
+	width: 1500px;
+	height: 700px;
+	background-color: white;
+	background-size:cover;
+    transition: 1s linear;
+}
+button {
+    background-color: white;
+    border: none;
+    font-size: 50px;
+    color:grey;
+}
+button:hover {
+    color:black;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.prev {
+    position: absolute;
+    left: 10px;
+    top: 300px;
+} 
+.next {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+}
